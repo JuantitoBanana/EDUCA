@@ -5,9 +5,9 @@ table 50112 Personnel
     fields
     {
         field(1; "Cod. pers"; Code[3]) { }
-        field(2; "Name"; Text[30]) { }
-        field(3; "Position"; Text[20]) { }
-        field(4; "Salary"; Decimal) { }
+        field(2; Name; Text[30]) { }
+        field(3; Position; Text[20]) { }
+        field(4; Salary; Decimal) { }
     }
 
     keys

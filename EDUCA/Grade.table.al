@@ -12,7 +12,7 @@ table 50100 Grade
 
         field(2; "Grade Name"; Text[30])
         {
-
+            NotBlank = true;
         }
         field(3; "Grade Description"; Text[30])
         {
@@ -21,12 +21,12 @@ table 50100 Grade
 
         field(4; Credits; Integer)
         {
-
+            InitValue = 0;
         }
 
         field(5; Fee; Decimal)
         {
-
+            DecimalPlaces = 0 : 2;
         }
     }
 
@@ -35,6 +35,15 @@ table 50100 Grade
         key(Key1; "Grade Code")
         {
             Clustered = true;
+        }
+
+        key(SecondaryKey1; "Grade Name")
+        {
+
+        }
+        key(SecondaryKey2; "Grade Description")
+        {
+
         }
     }
 

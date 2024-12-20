@@ -16,22 +16,28 @@ table 50102 Class
             NotBlank = true;
         }
 
-        field(3; Day; Text[10])
+        field(3; "Cod. Professor"; Code[2])
+        {
+            CharAllowed = '0123456789';
+            NotBlank = true;
+            TableRelation = Senate."Cod. Professor";
+        }
+        field(4; Day; Text[10])
         {
 
         }
 
-        field(4; Time; Time)
+        field(5; Time; Time)
         {
 
         }
 
-        field(5; Building; Text[2])
+        field(6; Building; Text[2])
         {
-            //Letras mayusculas
+            CharAllowed = 'AZ';
         }
 
-        field(6; Dispatch; Integer)
+        field(7; Dispatch; Integer)
         {
             MinValue = 0;
         }

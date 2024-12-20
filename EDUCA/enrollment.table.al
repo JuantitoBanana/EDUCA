@@ -16,6 +16,7 @@ table 50105 Enrollment
             DataClassification = ToBeClassified;
             CharAllowed = '0123456789';
             NotBlank = true;
+            TableRelation = Class.Section;
         }
         field(3; "Cod. student"; Code[3])
         {

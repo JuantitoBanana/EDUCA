@@ -15,6 +15,10 @@ page 50103 "Student List"
                 {
                     ApplicationArea = all;
                 }
+                field("Tutor Code"; Rec."Tutor Code")
+                {
+                    ApplicationArea = all;
+                }
                 field(Name; Rec.Name)
                 {
                     ApplicationArea = all;

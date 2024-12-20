@@ -10,7 +10,7 @@ table 50112 Personnel
             CharAllowed = '0123456789';
             NotBlank = true;
         }
-        field(2; Name; Text[30])
+        field(2; Name; Text[50])
         {
             NotBlank = true;
         }
@@ -23,6 +23,14 @@ table 50112 Personnel
             DecimalPlaces = 0 : 2;
             MinValue = 0;
         }
+        field(5; "Proffesor Code"; Code[2])
+        {
+            DataClassification = ToBeClassified;
+            CharAllowed = '0123456789';
+            NotBlank = true;
+            TableRelation = Senate."Cod. Professor";
+        }
+
     }
 
     keys

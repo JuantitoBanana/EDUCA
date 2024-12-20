@@ -1,6 +1,7 @@
 table 50100 Grade
 {
     DataClassification = ToBeClassified;
+    DrillDownPageId = "Grade List";
 
     fields
     {
@@ -10,21 +11,27 @@ table 50100 Grade
             NotBlank = true;
         }
 
-        field(2; "Grade Name"; Text[30])
+        field(2; "Department Code"; Code[4])
+        {
+            NotBlank = true;
+            TableRelation = Department."Department Code";
+        }
+
+        field(3; "Grade Name"; Text[30])
         {
             NotBlank = true;
         }
-        field(3; "Grade Description"; Text[30])
+        field(4; "Grade Description"; Text[30])
         {
 
         }
 
-        field(4; Credits; Integer)
+        field(5; Credits; Integer)
         {
             InitValue = 0;
         }
 
-        field(5; Fee; Decimal)
+        field(6; Fee; Decimal)
         {
             DecimalPlaces = 0 : 2;
         }

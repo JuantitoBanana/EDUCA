@@ -11,26 +11,33 @@ table 50103 Student
             NotBlank = true;
         }
 
-        field(2; Name; Text[30])
+        field(2; "Tutor Code"; Code[2])
+        {
+            CharAllowed = '0123456789';
+            NotBlank = true;
+            TableRelation = Senate."Cod. Professor";
+        }
+
+        field(3; Name; Text[50])
         {
             NotBlank = true;
         }
 
-        field(3; Gender; Enum Gender)
+        field(4; Gender; Enum Gender)
         {
 
         }
 
-        field(4; Address; Text[50])
+        field(5; Address; Text[50])
         {
 
         }
-        field(5; Phone; Text[9])
+        field(6; Phone; Text[9])
         {
             CharAllowed = '0123456789';
         }
 
-        field(6; Birth; Date)
+        field(7; Birth; Date)
         {
 
         }

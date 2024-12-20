@@ -10,15 +10,29 @@ table 50101 Department
             NotBlank = true;
         }
 
-        field(2; Building; Text[2])
+        field(2; "Manager Code"; Code[2])
         {
-            //Propiedad de mayusculas
+            CharAllowed = '0123456789';
+            NotBlank = true;
+            TableRelation = Senate."Cod. Professor";
         }
 
-        field(3; Dispatch; Integer)
+        field(3; Building; Text[2])
+        {
+            CharAllowed = 'AZ';
+        }
+
+        field(4; Dispatch; Integer)
         {
             InitValue = 0;
             MinValue = 0;
+        }
+        field(5; "Average Lab Fee"; Decimal)
+        {
+            FieldClass = FlowField;
+            CalcFormula = average(Grade.Fee where("Department Code" = FIELD("Department Code")));
+            DecimalPlaces = 0 : 2;
+            Editable = false;
         }
     }
 

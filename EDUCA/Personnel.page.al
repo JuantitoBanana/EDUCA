@@ -23,7 +23,11 @@ page 50112 "Personnel List"
                 {
                     ApplicationArea = all;
                 }
-                field(Salary; Rec."Cod. pers")
+                field(Salary; Rec.Salary)
+                {
+                    ApplicationArea = all;
+                }
+                field("Proffesor Code"; Rec."Proffesor Code")
                 {
                     ApplicationArea = all;
                 }

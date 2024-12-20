@@ -15,6 +15,10 @@ page 50111 "Senate List"
                 {
                     ApplicationArea = all;
                 }
+                field("Department Code"; Rec."Department Code")
+                {
+                    ApplicationArea = all;
+                }
                 field(Name; Rec.Name)
                 {
                     ApplicationArea = all;
@@ -32,6 +36,10 @@ page 50111 "Senate List"
                     ApplicationArea = all;
                 }
                 field(Salary; Rec.Salary)
+                {
+                    ApplicationArea = all;
+                }
+                field(TotalClassNum; Rec.TotalClassNum)
                 {
                     ApplicationArea = all;
                 }

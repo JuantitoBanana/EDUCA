@@ -19,6 +19,10 @@ page 50102 "Class List"
                 {
                     ApplicationArea = All;
                 }
+                field("Cod. Professor"; Rec."Cod. Professor")
+                {
+                    ApplicationArea = All;
+                }
                 field(Day; Rec.Day)
                 {
                     ApplicationArea = All;

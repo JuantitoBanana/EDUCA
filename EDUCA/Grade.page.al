@@ -15,6 +15,10 @@ page 50100 "Grade List"
                 {
                     ApplicationArea = all;
                 }
+                field("Department Code"; Rec."Department Code")
+                {
+                    ApplicationArea = all;
+                }
                 field("Grade Name"; Rec."Grade Name")
                 {
                     ApplicationArea = all;

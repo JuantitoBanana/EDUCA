@@ -5,10 +5,10 @@ enum 50100 Gender
     value(0; "")
     {
     }
-    value(1; Male)
+    value(1; M)
     {
     }
-    value(2; Female)
+    value(2; F)
     {
     }
 }

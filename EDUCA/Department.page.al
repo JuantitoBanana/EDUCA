@@ -15,11 +15,19 @@ page 50101 "Department List"
                 {
                     ApplicationArea = All;
                 }
+                field("Manager Code"; Rec."Manager Code")
+                {
+                    ApplicationArea = All;
+                }
                 field(Building; Rec.Building)
                 {
                     ApplicationArea = All;
                 }
                 field(Dispatch; Rec.Dispatch)
+                {
+                    ApplicationArea = All;
+                }
+                field("Average Lab Fee"; Rec."Average Lab Fee")
                 {
                     ApplicationArea = All;
                 }

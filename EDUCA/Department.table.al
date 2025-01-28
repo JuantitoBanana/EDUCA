@@ -47,4 +47,10 @@ table 50101 Department
 
         }
     }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Department Code", Building, Dispatch) { }
+
+    }
 }

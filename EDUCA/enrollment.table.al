@@ -9,7 +9,7 @@ table 50105 Enrollment
         {
             DataClassification = ToBeClassified;
             NotBlank = true;
-            TableRelation = Class."Grade Code";
+            TableRelation = Grade."Grade Code";
         }
         field(2; Section; Text[2])
         {
@@ -45,7 +45,6 @@ table 50105 Enrollment
 
         }
     }
-
 
 
 }

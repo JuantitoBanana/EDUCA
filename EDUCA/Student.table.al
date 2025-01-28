@@ -62,4 +62,9 @@ table 50103 Student
 
         }
     }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Student Code", Name, Gender) { }
+    }
 }

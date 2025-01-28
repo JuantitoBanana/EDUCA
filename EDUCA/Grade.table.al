@@ -54,4 +54,10 @@ table 50100 Grade
         }
     }
 
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Grade Code", "Grade Name") { }
+
+    }
+
 }

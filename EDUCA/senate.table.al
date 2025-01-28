@@ -78,4 +78,10 @@ table 50111 Senate
 
         }
     }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Cod. Professor", Name) { }
+
+    }
 }

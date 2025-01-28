@@ -55,4 +55,10 @@ table 50102 Class
         }
     }
 
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Grade Code", Section, Day, Time) { }
+
+    }
+
 }

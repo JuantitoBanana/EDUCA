@@ -41,6 +41,13 @@ table 50102 Class
         {
             MinValue = 0;
         }
+
+        field(8; NumEnrrolment; Integer)
+        {
+
+            FieldClass = FlowField;
+            CalcFormula = count(Enrollment Where(Section = field(Section)));
+        }
     }
 
     keys

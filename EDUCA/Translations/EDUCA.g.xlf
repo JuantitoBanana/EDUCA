@@ -28,6 +28,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Class - Field Grade Code - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3454070650 - Field 2497114080 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NumEnrrolment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Class - Field NumEnrrolment - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3454070650 - Field 2937872379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Section</source>
           <note from="Developer" annotates="general" priority="2"></note>

@@ -20,6 +20,7 @@ page 50127 "Cue Statistics Page"
                 {
                     ApplicationArea = All;
                 }
+
             }
             cuegroup(Enrrolments)
             {

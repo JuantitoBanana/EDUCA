@@ -1,9 +1,9 @@
-page 50122 "Class Card"
+page 50128 "Student Card"
 {
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = Class;
+    SourceTable = Student;
 
     layout
     {
@@ -11,64 +11,66 @@ page 50122 "Class Card"
         {
             group(General)
             {
-                field("Grade Code"; Rec."Grade Code")
-                {
-                    ApplicationArea = All;
-                    Importance = Promoted;
-                    LookupPageId = "Resume Grade List";
-                }
-                field(Section; Rec.Section)
+                field("Student Code"; Rec."Student Code")
                 {
                     ApplicationArea = All;
                     Importance = Promoted;
                 }
-                field(Day; Rec.Day)
+                field("Name"; Rec."Name")
                 {
                     ApplicationArea = All;
                     Importance = Promoted;
                 }
-
-                field(Time; Rec.Time)
+                field("Gender"; Rec."Gender")
+                {
+                    ApplicationArea = All;
+                }
+                field("Birth Date"; Rec.Birth)
+                {
+                    ApplicationArea = All;
+                }
+            }
+            group(Comunication)
+            {
+                field(Address; Rec.Address)
+                {
+                    ApplicationArea = All;
+                    Importance = Promoted;
+                }
+                field(Phone; Rec.Phone)
                 {
                     ApplicationArea = All;
                     Importance = Promoted;
                 }
             }
-
-            group(Location)
+            group(Tutorial)
             {
-                field(Building; Rec.Building)
-                {
-                    ApplicationArea = All;
-                    Importance = Promoted;
-                }
-                field(Dispatch; Rec.Dispatch)
-                {
-                    ApplicationArea = All;
-                    Importance = Promoted;
-                }
-            }
-
-            group(Professor)
-            {
-                field("Cod. Professor"; Rec."Cod. Professor")
+                field("Tutor Code"; Rec."Tutor Code")
                 {
                     ApplicationArea = All;
                     Importance = Promoted;
                     LookupPageId = "Resume Senate List";
                 }
             }
-
-
         }
+    }
 
-        area(FactBoxes)
+    actions
+    {
+        area(Navigation)
         {
-            part("Numeber of Enrrolments"; "Stats FactBox")
+            action(Enrollments)
+            {
+                ApplicationArea = all;
+                RunObject = Page "Resume Enrollment List";
+            }
+            action("New Enrrollment")
             {
                 ApplicationArea = All;
+                RunPageMode = Create;
+                RunObject = Page "Enrollment";
+                RunPageLink = "Cod. student" = field("Student Code");
             }
         }
-
     }
 }

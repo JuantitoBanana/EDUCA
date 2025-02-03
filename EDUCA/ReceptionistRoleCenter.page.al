@@ -4,24 +4,33 @@ page 50125 "Recepcionist/Admin. Rol"
 
     layout
     {
-        area(RoleCenter)
+        area(rolecenter)
         {
-            part()
+            part(Control104; "Headline RC Order Processor")
             {
-
+                ApplicationArea = Basic, Suite;
             }
-            part()
+
+            part(information; "Cue Statistics Page")
             {
-
+                ApplicationArea = Suite;
             }
-            part()
+
+            part(Professor; "Senate List")
             {
-
+                ApplicationArea = Suite;
             }
-            part()
+
+            part(Student; "Student List")
             {
-
+                ApplicationArea = Suite;
             }
+
+            part(Personnel; "Personnel List")
+            {
+                ApplicationArea = Suite;
+            }
+
         }
     }
 
@@ -31,7 +40,7 @@ page 50125 "Recepcionist/Admin. Rol"
         {
             action(ActionBarAction)
             {
-                RunObject = Page ObjectName;
+
             }
         }
         area(Sections)
@@ -40,7 +49,7 @@ page 50125 "Recepcionist/Admin. Rol"
             {
                 action(SectionsAction)
                 {
-                    RunObject = Page ObjectName;
+
                 }
             }
         }
@@ -48,7 +57,7 @@ page 50125 "Recepcionist/Admin. Rol"
         {
             action(EmbeddingAction)
             {
-                RunObject = Page ObjectName;
+
             }
         }
     }

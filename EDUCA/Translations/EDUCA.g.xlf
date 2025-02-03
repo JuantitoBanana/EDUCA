@@ -38,6 +38,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Class - Field Time - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1940525010 - Field 3931558939 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EnrrolmentCount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cue Statistics - Field EnrrolmentCount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1940525010 - Field 2271509247 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FemaleCount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cue Statistics - Field FemaleCount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1940525010 - Field 3641927271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cue Statistics - Field ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1940525010 - Field 2398259778 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MaleCount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Cue Statistics - Field MaleCount - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1651921640 - Field 3965632222 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Average Lab Fee</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -292,6 +312,11 @@
           <source>Grade Name</source>
           <note from="Developer" annotates="general" priority="2">ESP="Nombre Curso"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Grade Card - Control Grade Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Profile 2182418216 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Recepcionista/Administrador</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile Recepcionist/Admin - Property Caption</note>
         </trans-unit>
       </group>
     </body>

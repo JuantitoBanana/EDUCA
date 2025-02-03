@@ -1,6 +1,6 @@
 page 50103 "Student List"
 {
-    PageType = List;
+    PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Student;

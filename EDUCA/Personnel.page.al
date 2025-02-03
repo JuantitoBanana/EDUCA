@@ -1,6 +1,6 @@
 page 50112 "Personnel List"
 {
-    PageType = List;
+    PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Personnel;
@@ -31,25 +31,6 @@ page 50112 "Personnel List"
                 {
                     ApplicationArea = all;
                 }
-            }
-        }
-        area(Factboxes)
-        {
-
-        }
-    }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-
-                trigger OnAction()
-                begin
-
-                end;
             }
         }
     }

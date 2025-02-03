@@ -1,6 +1,6 @@
 page 50111 "Senate List"
 {
-    PageType = List;
+    PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Senate;

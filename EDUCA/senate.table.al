@@ -49,6 +49,12 @@ table 50111 Senate
             FieldClass = FlowField;
         }
 
+        field(9; "Helpers Number"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count(Personnel where("Proffesor Code" = field("Cod. Professor"), Position = const('Ayudante')));
+        }
+
         /*
         field(9; "NumClassPerDay"; Integer)
         {

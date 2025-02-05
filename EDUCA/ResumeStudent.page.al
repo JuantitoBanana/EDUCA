@@ -1,6 +1,6 @@
 page 50118 "Resume Student List"
 {
-    PageType = List;
+    PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Student;
@@ -14,6 +14,7 @@ page 50118 "Resume Student List"
                 field("Student Code"; Rec."Student Code")
                 {
                     ApplicationArea = all;
+                    DrillDownPageId = "Student Card";
                 }
                 field(Name; Rec.Name)
                 {

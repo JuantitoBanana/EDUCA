@@ -14,6 +14,7 @@ page 50120 "Resume Department List"
                 field("Department Code"; Rec."Department Code")
                 {
                     ApplicationArea = All;
+                    DrillDownPageId = "Department Card";
                 }
                 field(Building; Rec.Building)
                 {

@@ -14,6 +14,7 @@ page 50117 "Resume Class List"
                 field("Grade Code"; Rec."Grade Code")
                 {
                     ApplicationArea = All;
+                    DrillDownPageId = "Class Card";
                 }
                 field(Section; Rec.Section)
                 {

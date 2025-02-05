@@ -1,6 +1,6 @@
-page 50115 "Enrollment"
+page 50115 "Enrollment Card"
 {
-    Caption = 'Enrollment', comment = 'ESP="Matrículas"';
+    Caption = 'Enrollment Card', comment = 'ESP="Matrículas"';
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
@@ -19,6 +19,7 @@ page 50115 "Enrollment"
                     ApplicationArea = all;
                     Caption = 'Cod. grade', comment = 'ESP="Código Grado"';
                     LookupPageId = "Resume Grade List";
+                    Importance = Promoted;
 
                 }
                 field(Section; Rec.Section)
@@ -26,22 +27,26 @@ page 50115 "Enrollment"
                     ApplicationArea = all;
                     Caption = 'Section', comment = 'ESP="Sección"';
                     LookupPageId = "Resume Class List";
+                    Importance = Promoted;
                 }
                 field("Cod. student"; Rec."Cod. student")
                 {
                     ApplicationArea = all;
                     Caption = 'Cod. student', comment = 'ESP="Código Estudiante"';
                     LookupPageId = "Resume Student List";
+                    Importance = Promoted;
                 }
                 field("Grade Date"; Rec."Grade Date")
                 {
                     ApplicationArea = all;
                     Caption = 'Grade Date', comment = 'ESP="Fecha Matrícula"';
+                    Importance = Promoted;
                 }
                 field("Grade Hour"; Rec."Grade Hour")
                 {
                     ApplicationArea = all;
                     Caption = 'Grade Hour', comment = 'ESP="Hora Matrícula"';
+                    Importance = Promoted;
                 }
             }
         }
@@ -49,12 +54,13 @@ page 50115 "Enrollment"
 
     actions
     {
-        area(Reporting)
+        area(Navigation)
         {
             action(Grade)
             {
                 ApplicationArea = all;
-                RunObject = Page "Grade List";
+                RunObject = Page "Grade Card";
+                RunPageLink = "Grade Code" = field("Cod. grade");
                 Promoted = true;
                 PromotedCategory = Category4;
             }
@@ -62,24 +68,26 @@ page 50115 "Enrollment"
             action(Class)
             {
                 ApplicationArea = all;
-                RunObject = page "Class List";
+                RunObject = page "Class Card";
+                RunPageLink = Section = field("Section");
                 Promoted = true;
                 PromotedCategory = Category4;
             }
             action(Data)
             {
                 ApplicationArea = all;
-                RunObject = Page "Student List";
+                RunObject = Page "Student Card";
+                RunPageLink = "Student Code" = field("Cod. student");
                 Promoted = true;
                 PromotedCategory = Category5;
             }
             action(Enrrolment)
             {
                 ApplicationArea = all;
-                RunObject = Page "Enrollment List";
+                RunObject = Page "Resume Enrollment List";
+                RunPageLink = "Cod. student" = field("Cod. student");
                 Promoted = true;
                 PromotedCategory = Category5;
-                RunPageLink = "Cod. student" = field("Cod. student");
             }
             action(Tutor)
             {

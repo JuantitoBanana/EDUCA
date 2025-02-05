@@ -1,9 +1,9 @@
-page 50129 "Resume Enrollment List"
+page 50133 "Resume Personnel List"
 {
-    PageType = List;
+    PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = Enrollment;
+    SourceTable = Personnel;
 
     layout
     {
@@ -11,16 +11,15 @@ page 50129 "Resume Enrollment List"
         {
             repeater(GroupName)
             {
-                field("Cod. grade"; Rec."Cod. grade")
-                {
-                    ApplicationArea = all;
-                    DrillDownPageId = "Enrollment Card";
-                }
-                field(Section; Rec.Section)
+                field("Cod. pers"; Rec."Cod. pers")
                 {
                     ApplicationArea = all;
                 }
-                field("Cod. student"; Rec."Cod. student")
+                field(Name; Rec.Name)
+                {
+                    ApplicationArea = all;
+                }
+                field(Position; Rec.Position)
                 {
                     ApplicationArea = all;
                 }

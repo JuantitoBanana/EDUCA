@@ -68,7 +68,7 @@ page 50128 "Student Card"
             {
                 ApplicationArea = All;
                 RunPageMode = Create;
-                RunObject = Page "Enrollment";
+                RunObject = Page "Enrollment Card";
                 RunPageLink = "Cod. student" = field("Student Code");
             }
         }

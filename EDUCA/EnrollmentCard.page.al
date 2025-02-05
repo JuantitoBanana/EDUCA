@@ -2,8 +2,7 @@ page 50115 "Enrollment Card"
 {
     Caption = 'Enrollment Card', comment = 'ESP="Matrículas"';
     PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = None;
     SourceTable = Enrollment;
     PromotedActionCategories = 'a,b,c,Information, Student';
 

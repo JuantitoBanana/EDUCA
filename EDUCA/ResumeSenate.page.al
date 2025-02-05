@@ -1,8 +1,7 @@
 page 50123 "Resume Senate List"
 {
     PageType = List;
-    ApplicationArea = All;
-    UsageCategory = Lists;
+    UsageCategory = None;
     SourceTable = Senate;
 
     layout
@@ -14,7 +13,6 @@ page 50123 "Resume Senate List"
                 field("Cod. Professor"; Rec."Cod. Professor")
                 {
                     ApplicationArea = all;
-                    DrillDownPageId = "Senate Card";
                 }
                 field(Name; Rec.Name)
                 {

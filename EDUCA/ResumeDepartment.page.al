@@ -1,9 +1,9 @@
 page 50120 "Resume Department List"
 {
     PageType = List;
-    ApplicationArea = All;
-    UsageCategory = Lists;
+    UsageCategory = None;
     SourceTable = Department;
+    CardPageId = "Department Card";
 
     layout
     {
@@ -14,7 +14,7 @@ page 50120 "Resume Department List"
                 field("Department Code"; Rec."Department Code")
                 {
                     ApplicationArea = All;
-                    DrillDownPageId = "Department Card";
+
                 }
                 field(Building; Rec.Building)
                 {

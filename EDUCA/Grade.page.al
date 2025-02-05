@@ -4,6 +4,7 @@ page 50100 "Grade List"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Grade;
+    CardPageId = "Grade Card";
 
     layout
     {

@@ -1,8 +1,7 @@
 page 50128 "Student Card"
 {
     PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Lists;
+    UsageCategory = None;
     SourceTable = Student;
 
     layout
@@ -63,7 +62,12 @@ page 50128 "Student Card"
             {
                 ApplicationArea = all;
                 RunObject = Page "Resume Enrollment List";
+                RunPageLink = "Cod. student" = field("Student Code");
             }
+
+        }
+        area(Creation)
+        {
             action("New Enrrollment")
             {
                 ApplicationArea = All;

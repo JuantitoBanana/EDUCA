@@ -1,8 +1,7 @@
 page 50133 "Resume Personnel List"
 {
     PageType = ListPart;
-    ApplicationArea = All;
-    UsageCategory = Lists;
+    UsageCategory = None;
     SourceTable = Personnel;
 
     layout

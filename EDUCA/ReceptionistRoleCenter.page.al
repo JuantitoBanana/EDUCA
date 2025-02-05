@@ -38,27 +38,19 @@ page 50125 "Recepcionist/Admin. Rol"
     {
         area(Creation)
         {
-            action(ActionBarAction)
+            action("New Student")
             {
-
+                ApplicationArea = all;
+                RunObject = Page "Student Card";
+                RunPageMode = Create;
+            }
+            action("New Enrrollment")
+            {
+                ApplicationArea = all;
+                RunObject = Page "Enrollment Card";
+                RunPageMode = Create;
             }
         }
-        area(Sections)
-        {
-            group(SectionsGroupName)
-            {
-                action(SectionsAction)
-                {
 
-                }
-            }
-        }
-        area(Embedding)
-        {
-            action(EmbeddingAction)
-            {
-
-            }
-        }
     }
 }

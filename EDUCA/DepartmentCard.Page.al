@@ -1,8 +1,7 @@
 page 50134 "Department Card"
 {
     PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = none;
     SourceTable = Department;
 
     layout

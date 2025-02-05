@@ -1,8 +1,7 @@
 page 50119 "Grade Card"
 {
     PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = None;
     SourceTable = Grade;
 
     layout

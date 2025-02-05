@@ -14,11 +14,13 @@ page 50127 "Cue Statistics Page"
                 field("MaleCount"; Rec.MaleCount)
                 {
                     ApplicationArea = All;
+                    DrillDownPageId = "Student List";
 
                 }
                 field("FemaleCount"; Rec.FemaleCount)
                 {
                     ApplicationArea = All;
+                    DrillDownPageId = "Student List";
                 }
 
             }
@@ -27,6 +29,7 @@ page 50127 "Cue Statistics Page"
                 field("EnrrolmentCount"; Rec.EnrrolmentCount)
                 {
                     ApplicationArea = All;
+                    DrillDownPageId = "Enrollment List";
                 }
             }
         }

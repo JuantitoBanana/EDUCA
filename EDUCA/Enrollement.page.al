@@ -4,6 +4,7 @@ page 50105 "Enrollment List"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Enrollment;
+    CardPageId = "Enrollment Card";
 
     layout
     {

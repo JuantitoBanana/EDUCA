@@ -4,7 +4,7 @@ page 50111 "Senate List"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Senate;
-
+    CardPageId = "Senate Card";
     layout
     {
         area(Content)

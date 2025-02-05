@@ -1,8 +1,7 @@
 page 50116 "Resume Grade List"
 {
     PageType = List;
-    ApplicationArea = All;
-    UsageCategory = Lists;
+    UsageCategory = None;
     SourceTable = Grade;
 
     layout
@@ -14,7 +13,6 @@ page 50116 "Resume Grade List"
                 field("Grade Code"; Rec."Grade Code")
                 {
                     ApplicationArea = all;
-                    DrillDownPageId = "Grade Card";
                 }
                 field("Grade Name"; Rec."Grade Name")
                 {

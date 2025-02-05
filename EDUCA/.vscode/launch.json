@@ -6,7 +6,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
-            "server": "http://localhost:8081",
+            "server": "http://localhost:8080",
             "serverInstance": "BC200",
             "authentication": "Windows",
             "startupObjectId": 50125,

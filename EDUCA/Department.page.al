@@ -4,7 +4,7 @@ page 50101 "Department List"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Department;
-
+    CardPageId = "Department Card";
     layout
     {
         area(Content)

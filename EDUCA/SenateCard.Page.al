@@ -1,8 +1,7 @@
 page 50130 "Senate Card"
 {
     PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = None;
     SourceTable = Senate;
 
     layout

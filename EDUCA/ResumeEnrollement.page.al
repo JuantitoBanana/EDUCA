@@ -1,8 +1,7 @@
 page 50129 "Resume Enrollment List"
 {
     PageType = List;
-    ApplicationArea = All;
-    UsageCategory = Lists;
+    UsageCategory = None;
     SourceTable = Enrollment;
 
     layout
@@ -14,7 +13,6 @@ page 50129 "Resume Enrollment List"
                 field("Cod. grade"; Rec."Cod. grade")
                 {
                     ApplicationArea = all;
-                    DrillDownPageId = "Enrollment Card";
                 }
                 field(Section; Rec.Section)
                 {

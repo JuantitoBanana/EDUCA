@@ -1,10 +1,8 @@
 page 50131 "Resume Student-Senate List"
 {
     PageType = ListPart;
-    ApplicationArea = All;
-    UsageCategory = Lists;
+    UsageCategory = None;
     SourceTable = Student;
-
     layout
     {
         area(Content)
@@ -14,7 +12,6 @@ page 50131 "Resume Student-Senate List"
                 field("Student Code"; Rec."Student Code")
                 {
                     ApplicationArea = all;
-                    DrillDownPageId = "Student Card";
                     Editable = false;
                 }
                 field(Name; Rec.Name)

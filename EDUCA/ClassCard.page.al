@@ -1,8 +1,7 @@
 page 50122 "Class Card"
 {
     PageType = Card;
-    ApplicationArea = All;
-    UsageCategory = Lists;
+    UsageCategory = none;
     SourceTable = Class;
 
     layout
@@ -49,7 +48,7 @@ page 50122 "Class Card"
                 }
             }
 
-            group(Professor)
+            group(Teacher)
             {
                 field("Cod. Professor"; Rec."Cod. Professor")
                 {

@@ -1,6 +1,6 @@
 page 50115 "Enrollment Card"
 {
-    Caption = 'Enrollment Card', comment = 'ESP="Matrículas"';
+    Caption = 'Enrollment Card', comment = 'ESP="Ficha Matrícula"';
     PageType = Card;
     UsageCategory = None;
     SourceTable = Enrollment;
@@ -57,6 +57,7 @@ page 50115 "Enrollment Card"
         {
             action(Grade)
             {
+                Caption = 'Grade', comment = 'ESP="Curso"';
                 ApplicationArea = all;
                 RunObject = Page "Grade Card";
                 RunPageLink = "Grade Code" = field("Cod. grade");
@@ -66,6 +67,7 @@ page 50115 "Enrollment Card"
 
             action(Class)
             {
+                Caption = 'Class', comment = 'ESP="Clase"';
                 ApplicationArea = all;
                 RunObject = page "Class Card";
                 RunPageLink = Section = field("Section");
@@ -74,6 +76,7 @@ page 50115 "Enrollment Card"
             }
             action(Data)
             {
+                Caption = 'Data', comment = 'ESP="Datos"';
                 ApplicationArea = all;
                 RunObject = Page "Student Card";
                 RunPageLink = "Student Code" = field("Cod. student");
@@ -82,6 +85,7 @@ page 50115 "Enrollment Card"
             }
             action(Enrrolment)
             {
+                Caption = 'Enrrolment', comment = 'ESP="Matrícula"';
                 ApplicationArea = all;
                 RunObject = Page "Resume Enrollment List";
                 RunPageLink = "Cod. student" = field("Cod. student");
@@ -90,6 +94,7 @@ page 50115 "Enrollment Card"
             }
             action(Tutor)
             {
+                Caption = 'Tutor', comment = 'ESP="Tutor"';
                 ApplicationArea = all;
                 RunObject = Page "Senate List";
                 Promoted = true;

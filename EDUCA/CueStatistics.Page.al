@@ -1,8 +1,8 @@
 page 50127 "Cue Statistics Page"
 {
+    Caption = 'Cue Statistics Page', comment = 'ESP="Estadísticas de Cue"';
     PageType = ListPart;
-    ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = none;
     SourceTable = "Cue Statistics";
 
     layout
@@ -11,14 +11,17 @@ page 50127 "Cue Statistics Page"
         {
             cuegroup(Students)
             {
-                field("MaleCount"; Rec.MaleCount)
+                Caption = 'Students', comment = 'ESP="Estudiantes"';
+                field("Male Count"; Rec.MaleCount)
                 {
+                    Caption = 'Male Count', comment = 'ESP="Estudiantes Masculinos"';
                     ApplicationArea = All;
                     DrillDownPageId = "Student List";
 
                 }
-                field("FemaleCount"; Rec.FemaleCount)
+                field("Female Count"; Rec.FemaleCount)
                 {
+                    Caption = 'Female Count', comment = 'ESP="Estudiantes Femeninos"';
                     ApplicationArea = All;
                     DrillDownPageId = "Student List";
                 }
@@ -26,8 +29,10 @@ page 50127 "Cue Statistics Page"
             }
             cuegroup(Enrrolments)
             {
-                field("EnrrolmentCount"; Rec.EnrrolmentCount)
+                Caption = 'Enrrolments', comment = 'ESP="Matrículas"';
+                field("Enrrolment Count"; Rec.EnrrolmentCount)
                 {
+                    Caption = 'Enrrolment Count', comment = 'ESP="Número de Matrículas"';
                     ApplicationArea = All;
                     DrillDownPageId = "Enrollment List";
                 }
@@ -43,7 +48,4 @@ page 50127 "Cue Statistics Page"
             Rec.Insert();
         end;
     end;
-
-    var
-        myInt: Integer;
 }

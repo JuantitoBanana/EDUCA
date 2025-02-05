@@ -1,27 +1,21 @@
-page 50121 "Associated Class FactBox"
+page 50124 "Statistics"
 {
+    Caption = 'Statistics', comment = 'ESP="Estadísticas"';
     PageType = CardPart;
-    ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = None;
     SourceTable = Class;
 
     layout
     {
         area(Content)
         {
-            field(Day; Rec.Day)
+            field("Number Enrrolment"; Rec.NumEnrrolment)
             {
+                Caption = 'Number Enrrolment', comment = 'ESP="Número Matriculados"';
                 ApplicationArea = All;
-            }
 
-            field(Time; Rec.Time)
-            {
-                ApplicationArea = All;
-            }
-            field("Cod. Professor"; Rec."Cod. Professor")
-            {
-                ApplicationArea = All;
             }
         }
     }
+
 }

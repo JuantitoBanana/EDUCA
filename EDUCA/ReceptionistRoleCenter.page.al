@@ -1,33 +1,39 @@
 page 50125 "Recepcionist/Admin. Rol"
 {
+    Caption = 'Recepcionist/Admin. Rol', comment = 'ESP="Rol Recepcionista/Admin."';
     PageType = RoleCenter;
 
     layout
     {
         area(rolecenter)
         {
-            part(Control104; "Headline RC Order Processor")
+            part(Headline; "Headline RC Order Processor")
             {
+                Caption = 'Headline', comment = 'ESP="Titular"';
                 ApplicationArea = Basic, Suite;
             }
 
-            part(information; "Cue Statistics Page")
+            part(Information; "Cue Statistics Page")
             {
+                Caption = 'Information', comment = 'ESP="Información"';
                 ApplicationArea = Suite;
             }
 
-            part(Professor; "Senate List")
+            part(Teacher; "Senate List")
             {
+                Caption = 'Teacher', comment = 'ESP="Profesor"';
                 ApplicationArea = Suite;
             }
 
             part(Student; "Student List")
             {
+                Caption = 'Student', comment = 'ESP="Estudiante"';
                 ApplicationArea = Suite;
             }
 
             part(Personnel; "Personnel List")
             {
+                Caption = 'Personnel', comment = 'ESP="Personal"';
                 ApplicationArea = Suite;
             }
 
@@ -40,12 +46,14 @@ page 50125 "Recepcionist/Admin. Rol"
         {
             action("New Student")
             {
+                Caption = 'New Student', comment = 'ESP="Nuevo Estudiante"';
                 ApplicationArea = all;
                 RunObject = Page "Student Card";
                 RunPageMode = Create;
             }
             action("New Enrrollment")
             {
+                Caption = 'New Enrrollment', comment = 'ESP="Nueva Matrícula"';
                 ApplicationArea = all;
                 RunObject = Page "Enrollment Card";
                 RunPageMode = Create;

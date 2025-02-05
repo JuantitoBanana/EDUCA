@@ -1,5 +1,6 @@
 page 50119 "Grade Card"
 {
+    Caption = 'Grade Card', comment = 'ESP="Ficha Curso"';
     PageType = Card;
     UsageCategory = None;
     SourceTable = Grade;
@@ -14,7 +15,7 @@ page 50119 "Grade Card"
                 field("Cod. grade"; Rec."Grade Code")
                 {
                     ApplicationArea = all;
-                    Caption = 'Cod. grade', comment = 'ESP="Código Grado"';
+                    Caption = 'Cod. grade', comment = 'ESP="Código Curso"';
 
                 }
                 field("Grade Name"; Rec."Grade Name")
@@ -42,7 +43,7 @@ page 50119 "Grade Card"
                 field("Department Code"; Rec."Department Code")
                 {
                     ApplicationArea = all;
-                    Caption = 'Department Code', comment = 'ESP="Departamento"';
+                    Caption = 'Department Code', comment = 'ESP="Código Departamento"';
                     LookupPageId = "Resume Department List";
                 }
             }
@@ -52,6 +53,7 @@ page 50119 "Grade Card"
 
             part("Associated Classes"; "Associated Class FactBox")
             {
+                Caption = 'Associated Classes', comment = 'ESP="Clases Asociadas"';
                 ApplicationArea = all;
                 SubPageLink = "Grade Code" = field("Grade Code");
             }

@@ -1,5 +1,5 @@
 profile "Recepcionist/Admin"
 {
-    Caption = 'Recepcionista/Administrador';
+    Caption = 'Recepcionist/Admin', comment = 'ESP="Recepcionista/Administrador"';
     RoleCenter = 50125;
 }

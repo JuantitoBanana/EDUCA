@@ -7,8 +7,10 @@ enum 50100 Gender
     }
     value(1; M)
     {
+        Caption = 'M', comment = 'ESP="H"';
     }
     value(2; F)
     {
+        Caption = 'F', comment = 'ESP="M"';
     }
 }

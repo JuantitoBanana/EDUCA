@@ -2,8 +2,7 @@ page 50132 "Senate Stats"
 {
     Caption = 'Senate Stats', comment = 'ESP="Estadísticas Claustro"';
     PageType = CardPart;
-    ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = None;
     SourceTable = Senate;
 
     layout

@@ -4,6 +4,7 @@ page 50117 "Resume Class List"
     PageType = List;
     UsageCategory = None;
     SourceTable = Class;
+    CardPageId = "Class Card";
 
     layout
     {

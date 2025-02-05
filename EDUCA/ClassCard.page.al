@@ -79,6 +79,15 @@ page 50122 "Class Card"
                 Caption = 'Numeber of Enrrolments', comment = 'ESP="Número de Matrículas"';
                 ApplicationArea = All;
             }
+
+            systempart(Control1900383207; Links)
+            {
+                ApplicationArea = RecordLinks;
+            }
+            systempart(Control1905767507; Notes)
+            {
+                ApplicationArea = Notes;
+            }
         }
 
     }

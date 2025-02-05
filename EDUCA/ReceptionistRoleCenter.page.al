@@ -13,9 +13,9 @@ page 50125 "Recepcionist/Admin. Rol"
                 ApplicationArea = Basic, Suite;
             }
 
-            part(Information; "Cue Statistics Page")
+            part("Cue Information"; "Cue Statistics Page")
             {
-                Caption = 'Information', comment = 'ESP="Información"';
+                Caption = 'Cue Information', comment = 'ESP="Información Cue"';
                 ApplicationArea = Suite;
             }
 

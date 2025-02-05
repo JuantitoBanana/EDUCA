@@ -63,6 +63,17 @@ page 50128 "Student Card"
                 }
             }
         }
+        area(FactBoxes)
+        {
+            systempart(Control1900383207; Links)
+            {
+                ApplicationArea = RecordLinks;
+            }
+            systempart(Control1905767507; Notes)
+            {
+                ApplicationArea = Notes;
+            }
+        }
     }
 
     actions

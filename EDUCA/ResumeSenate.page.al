@@ -4,6 +4,7 @@ page 50123 "Resume Senate List"
     PageType = List;
     UsageCategory = None;
     SourceTable = Senate;
+    CardPageId = "Senate Card";
 
     layout
     {

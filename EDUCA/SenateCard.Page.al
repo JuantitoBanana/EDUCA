@@ -61,6 +61,15 @@ page 50130 "Senate Card"
                 ApplicationArea = All;
                 SubPageLink = "Cod. Professor" = field("Cod. Professor");
             }
+
+            systempart(Control1900383207; Links)
+            {
+                ApplicationArea = RecordLinks;
+            }
+            systempart(Control1905767507; Notes)
+            {
+                ApplicationArea = Notes;
+            }
         }
     }
     actions

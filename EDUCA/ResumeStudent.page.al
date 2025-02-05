@@ -4,6 +4,7 @@ page 50118 "Resume Student List"
     PageType = ListPart;
     UsageCategory = None;
     SourceTable = Student;
+    CardPageId = "Student Card";
 
     layout
     {

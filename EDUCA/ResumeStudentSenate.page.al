@@ -4,6 +4,8 @@ page 50131 "Resume Student-Senate List"
     PageType = ListPart;
     UsageCategory = None;
     SourceTable = Student;
+    CardPageId = "Student Card";
+
     layout
     {
         area(Content)

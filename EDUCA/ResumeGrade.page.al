@@ -4,7 +4,6 @@ page 50116 "Resume Grade List"
     PageType = List;
     UsageCategory = None;
     SourceTable = Grade;
-    CardPageId = "Grade Card";
 
     layout
     {

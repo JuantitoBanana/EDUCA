@@ -66,6 +66,7 @@ page 50134 "Department Card"
                 Caption = 'Teacher', comment = 'ESP="Profesor"';
                 ApplicationArea = all;
                 RunObject = Page "Resume Senate List";
+                RunPageMode = View;
                 RunPageLink = "Department Code" = field("Department Code");
             }
             action(Manager)
@@ -73,6 +74,7 @@ page 50134 "Department Card"
                 Caption = 'Manager', comment = 'ESP="Director"';
                 ApplicationArea = all;
                 RunObject = Page "Resume Senate List";
+                RunPageMode = View;
                 RunPageLink = "Cod. Professor" = field("Manager Code");
             }
         }

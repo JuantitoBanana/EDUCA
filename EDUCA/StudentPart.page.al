@@ -1,7 +1,7 @@
-page 50118 "Resume Student List"
+page 50136 "Student ListPart"
 {
-    Caption = 'Resume Student List', comment = 'ESP="Resumen Estudiantes"';
-    PageType = List;
+    Caption = 'Student ListPart', comment = 'ESP="Estudiantes"';
+    PageType = ListPart;
     UsageCategory = None;
     SourceTable = Student;
 
@@ -16,6 +16,7 @@ page 50118 "Resume Student List"
                     Caption = 'Student Code', comment = 'ESP="Código Estudiante"';
                     ApplicationArea = all;
                 }
+
                 field(Name; Rec.Name)
                 {
                     Caption = 'Name', comment = 'ESP="Nombre"';
@@ -39,6 +40,12 @@ page 50118 "Resume Student List"
                 field(Birth; Rec.Birth)
                 {
                     Caption = 'Birth', comment = 'ESP="Nacimiento"';
+                    ApplicationArea = all;
+                }
+
+                field("Tutor Code"; Rec."Tutor Code")
+                {
+                    Caption = 'Tutor Code', comment = 'ESP="Código Tutor"';
                     ApplicationArea = all;
                 }
             }

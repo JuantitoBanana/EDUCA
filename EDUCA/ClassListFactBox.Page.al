@@ -13,7 +13,7 @@ page 50124 "Statistics"
             {
                 Caption = 'Number Enrrolment', comment = 'ESP="Número Matriculados"';
                 ApplicationArea = All;
-
+                DrillDownPageId = "Resume Enrollment List";
             }
         }
     }

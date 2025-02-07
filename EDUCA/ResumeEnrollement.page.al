@@ -4,7 +4,6 @@ page 50129 "Resume Enrollment List"
     PageType = List;
     UsageCategory = None;
     SourceTable = Enrollment;
-    CardPageId = "Enrollment Card";
 
     layout
     {

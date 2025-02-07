@@ -4,7 +4,6 @@ page 50120 "Resume Department List"
     PageType = List;
     UsageCategory = None;
     SourceTable = Department;
-    CardPageId = "Department Card";
 
     layout
     {

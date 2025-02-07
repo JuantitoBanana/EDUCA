@@ -4,7 +4,7 @@ page 50115 "Enrollment Card"
     PageType = Card;
     UsageCategory = None;
     SourceTable = Enrollment;
-    PromotedActionCategories = 'a,b,c,Information, Student';
+    PromotedActionCategories = 'a,b,c,Información, Estudiante';
 
     layout
     {
@@ -70,6 +70,7 @@ page 50115 "Enrollment Card"
             {
                 Caption = 'Grade', comment = 'ESP="Curso"';
                 ApplicationArea = all;
+                RunPageMode = View;
                 RunObject = Page "Grade Card";
                 RunPageLink = "Grade Code" = field("Cod. grade");
                 Promoted = true;
@@ -81,6 +82,7 @@ page 50115 "Enrollment Card"
                 Caption = 'Class', comment = 'ESP="Clase"';
                 ApplicationArea = all;
                 RunObject = page "Class Card";
+                RunPageMode = View;
                 RunPageLink = Section = field("Section");
                 Promoted = true;
                 PromotedCategory = Category4;
@@ -90,6 +92,7 @@ page 50115 "Enrollment Card"
                 Caption = 'Data', comment = 'ESP="Datos"';
                 ApplicationArea = all;
                 RunObject = Page "Student Card";
+                RunPageMode = View;
                 RunPageLink = "Student Code" = field("Cod. student");
                 Promoted = true;
                 PromotedCategory = Category5;
@@ -99,6 +102,7 @@ page 50115 "Enrollment Card"
                 Caption = 'Enrrolment', comment = 'ESP="Matrícula"';
                 ApplicationArea = all;
                 RunObject = Page "Resume Enrollment List";
+                RunPageMode = View;
                 RunPageLink = "Cod. student" = field("Cod. student");
                 Promoted = true;
                 PromotedCategory = Category5;
@@ -108,6 +112,7 @@ page 50115 "Enrollment Card"
                 Caption = 'Tutor', comment = 'ESP="Tutor"';
                 ApplicationArea = all;
                 RunObject = Page "Senate List";
+                RunPageMode = View;
                 Promoted = true;
                 PromotedCategory = Category5;
             }

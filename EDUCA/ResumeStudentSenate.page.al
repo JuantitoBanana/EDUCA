@@ -37,6 +37,7 @@ page 50131 "Resume Student-Senate List"
                 Caption = 'Enrollments', comment = 'ESP="Matrículas"';
                 ApplicationArea = all;
                 RunObject = Page "Resume Enrollment List";
+                RunPageMode = View;
                 RunPageLink = "Cod. student" = field("Student Code");
             }
             action(Data)
@@ -44,6 +45,7 @@ page 50131 "Resume Student-Senate List"
                 Caption = 'Data', comment = 'ESP="Datos"';
                 ApplicationArea = all;
                 RunObject = Page "Student Card";
+                RunPageMode = View;
                 RunPageLink = "Student Code" = field("Student Code");
             }
         }

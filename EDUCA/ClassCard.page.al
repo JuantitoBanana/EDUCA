@@ -5,6 +5,7 @@ page 50122 "Class Card"
     UsageCategory = none;
     SourceTable = Class;
 
+
     layout
     {
         area(Content)

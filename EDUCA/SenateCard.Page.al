@@ -40,6 +40,7 @@ page 50130 "Senate Card"
             {
                 Caption = 'Tutorial Student', comment = 'ESP="Tutoría Alumnos"';
                 ApplicationArea = All;
+
                 SubPageLink = "Tutor Code" = field("Cod. Professor");
             }
             group(Working)

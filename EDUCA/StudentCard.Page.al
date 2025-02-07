@@ -85,6 +85,7 @@ page 50128 "Student Card"
                 Caption = 'Enrollments', comment = 'ESP="Matrículas"';
                 ApplicationArea = all;
                 RunObject = Page "Resume Enrollment List";
+                RunPageMode = View;
                 RunPageLink = "Cod. student" = field("Student Code");
             }
 

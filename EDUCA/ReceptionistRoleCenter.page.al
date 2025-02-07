@@ -19,13 +19,13 @@ page 50125 "Recepcionist/Admin. Rol"
                 ApplicationArea = Suite;
             }
 
-            part(Teacher; "Senate List")
+            part(Teachers; "Senate ListPart")
             {
-                Caption = 'Teacher', comment = 'ESP="Profesor"';
+                Caption = 'Teachers', comment = 'ESP="Claustro"';
                 ApplicationArea = Suite;
             }
 
-            part(Student; "Student List")
+            part(Student; "Student ListPart")
             {
                 Caption = 'Student', comment = 'ESP="Estudiante"';
                 ApplicationArea = Suite;
